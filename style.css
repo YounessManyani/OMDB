@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+.navbar input{
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px black;
+    width: 500px;
+}
+.navbar button{
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: solid 1px black;
+    background-color: black;
+}
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+.movie-card {
+    flex: 1 1 calc(33% - 10px);
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #fff;
+}
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.movie-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.movie-card p {
+    font-size: 14px;
+    color: #555;
+    padding: 0 10px 10px;
+}
