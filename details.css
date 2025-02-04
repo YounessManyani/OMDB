@@ -1,0 +1,138 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body {
+    background-color: #141414; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #141414; 
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #222; 
+  }
+  
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+  }
+  .netflix-red {
+    color: #e50914; 
+  }
+  
+  
+  .back-button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+  }
+  .back-button:hover {
+    background-color: #f6121d;
+  }
+  
+
+  .detail-container {
+    display: flex;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #181818;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  
+  .left-column {
+    width: 40%;
+    background-color: #000; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left-column img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
+  
+  .right-column {
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  
+  .right-column h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+
+  .right-column p {
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+    color: #ccc; 
+  }
+  
+  
+  .right-column strong {
+    color: #aaa;
+  }
+  
+
+  .watch-button {
+    margin-top: 1.5rem;
+    background-color: #e50914;
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .watch-button:hover {
+    background-color: #f6121d;
+  }
+  
+
+  @media (max-width: 768px) {
+    .detail-container {
+      flex-direction: column;
+    }
+    .left-column, 
+    .right-column {
+      width: 100%;
+    }
+    .left-column {
+      max-height: 300px; 
+    }
+  }
+  

@@ -1,22 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recherche de Films</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>N Movies - Moderne Cards</title>
+
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="navbar">
-        <div>
-            <input type="text" id="movieTitle" placeholder="Entrez le titre d'un film">
-            <button id="searchBtn">Rechercher</button>
-        </div>
-    </div>
-    <div class="movies-container" id="moviesContainer">
-        <!-- Les cartes de films seront insérées ici -->
-    </div>
 
-    <script src="script.js"></script>
+ 
+  <header class="navbar">
+    <div class="logo">
+      <span class="netflix-red">N</span> Movies
+    </div>
+    <nav class="nav-links">
+      <a href="#" id="homeLink">Accueil</a>
+      <a href="#" id="seriesLink">Séries</a>
+      <a href="#" id="moviesLink">Films</a>
+    </nav>
+  </header>
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Des milliers de films et séries à portée de clic</h1>
+      <p>Recherchez votre prochain coup de cœur et explorez la sélection du moment.</p>
+      <div class="search-bar">
+        <input 
+          type="text"
+          id="movieTitle"
+          placeholder="Entrez le titre d'un film ou d'une série"
+        />
+        <button id="searchBtn">Rechercher</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="movies-container" id="moviesContainer">
+
+  </section>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
