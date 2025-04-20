@@ -135,4 +135,31 @@
       max-height: 300px; 
     }
   }
+  /* ------------------------------------------------------------------
+   BOUTON "ADD TO CARD"
+   ------------------------------------------------------------------ */
+.add-card-button {
+  margin-top: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.add-card-button:hover {
+  background-color: #555;
+}
+
+/* (optionnel) aligne les deux boutons côte‑à‑côte */
+.button-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
   

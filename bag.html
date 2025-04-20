@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ma Liste</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar identique, avec "Ma Liste" actif -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="netflix-red">N</span> Movies
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" id="homeLink">Accueil</a>
+      <a href="#" id="seriesLink">Séries</a>
+      <a href="#" id="moviesLink">Films</a>
+      <a href="bag.html" id="bagLink" class="active">Ma Liste</a>
+    </nav>
+  </header>
+
+  <!-- Titre de la page -->
+  <section class="hero-section" style="min-height: auto; padding: 2rem;">
+    <div class="hero-content">
+      <h1>Ma Liste</h1>
+      <p>Retrouvez ici tous les titres que vous avez ajoutés.</p>
+    </div>
+  </section>
+
+  <!-- Conteneur des cartes issues de localStorage -->
+  <section class="movies-container" id="bagContainer">
+    <!-- injecté par bag.js -->
+  </section>
+
+   <!-- Bouton Checkout -->
+ <div class="checkout-wrapper">
+   <button id="checkoutBtn" class="checkout-button">
+     Procéder au paiement
+   </button>
+ </div>
+
+  <script src="bag.js"></script>
+</body>
+</html>

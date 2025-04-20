@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Navbar identique -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="netflix-red">N</span> Movies
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="bag.html" class="active">Ma Liste</a>
+      <!-- autres liens… -->
+    </nav>
+  </header>
+
+  <!-- Formulaire de paiement -->
+  <form id="checkoutForm" class="checkout-form">
+    <h2>Informations de paiement</h2>
+
+    <!-- Infos perso -->
+    <div class="form-group">
+      <label for="fullName">Nom complet</label>
+      <input type="text" id="fullName" name="fullName" required/>
+    </div>
+    <div class="form-group">
+      <label for="email">Adresse e‑mail</label>
+      <input type="email" id="email" name="email" required/>
+    </div>
+
+    <!-- Infos carte bancaire -->
+    <div class="form-group">
+      <label for="cardNumber">Numéro de carte</label>
+      <input type="text" id="cardNumber" name="cardNumber" maxlength="19" placeholder="1234 5678 9012 3456" required/>
+    </div>
+    <div class="form-group">
+      <label for="expiry">Date d’expiration (MM/AA)</label>
+      <input type="text" id="expiry" name="expiry" maxlength="5" placeholder="08/25" required/>
+    </div>
+    <div class="form-group">
+      <label for="cvc">CVC</label>
+      <input type="text" id="cvc" name="cvc" maxlength="4" placeholder="123" required/>
+    </div>
+
+    <button type="submit">Payer maintenant</button>
+  </form>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
